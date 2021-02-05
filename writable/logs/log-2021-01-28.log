@@ -1,0 +1,18 @@
+CRITICAL - 2021-01-28 09:17:50 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 /opt/lampp/htdocs/CodeIgniter4/system/CodeIgniter.php(223): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /opt/lampp/htdocs/CodeIgniter4/system/CodeIgniter.php(171): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /opt/lampp/htdocs/CodeIgniter4/system/bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#3 /opt/lampp/htdocs/CodeIgniter4/spark(53): require('/opt/lampp/htdo...')
+#4 {main}
+CRITICAL - 2021-01-28 09:18:34 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 /opt/lampp/htdocs/CodeIgniter4/system/CodeIgniter.php(223): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /opt/lampp/htdocs/CodeIgniter4/system/CodeIgniter.php(171): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /opt/lampp/htdocs/CodeIgniter4/system/bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#3 /opt/lampp/htdocs/CodeIgniter4/spark(53): require('/opt/lampp/htdo...')
+#4 {main}
+CRITICAL - 2021-01-28 16:44:20 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 /opt/lampp/htdocs/framework/system/CodeIgniter.php(223): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /opt/lampp/htdocs/framework/system/CodeIgniter.php(171): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /opt/lampp/htdocs/framework/system/bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#3 /opt/lampp/htdocs/framework/spark(53): require('/opt/lampp/htdo...')
+#4 {main}

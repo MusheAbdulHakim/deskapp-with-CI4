@@ -1,0 +1,54 @@
+CRITICAL - 2021-01-29 03:38:50 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(914): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Home.php(9): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Home->index()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-29 03:43:57 --> Invalid file: deskapp/dashboard.php
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/View/View.php(207): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deskapp/dashboa...')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(1213): CodeIgniter\View\View->render('deskapp/dashboa...', Array, true)
+#2 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Home.php(9): view('deskapp/dashboa...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Home->index()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-29 15:57:10 --> syntax error, unexpected token "}"
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-29 15:57:23 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(914): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Home.php(9): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Home->index()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-29 16:27:30 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(914): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Home.php(9): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Home->index()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-29 16:28:08 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(914): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Home.php(9): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Home->index()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

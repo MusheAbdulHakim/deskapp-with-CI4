@@ -1,0 +1,147 @@
+CRITICAL - 2021-02-04 05:30:34 --> Session: Configured save path "NULL" is not writable by the PHP process.
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Session/Handlers/FileHandler.php(123): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath()
+#1 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/Session/Session.php(1027): session_start()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/Session/Session.php(226): CodeIgniter\Session\Session->startSession()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/Config/Services.php(714): CodeIgniter\Session\Session->start()
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/Config/BaseService.php(100): CodeIgniter\Config\Services::session()
+#6 /opt/lampp/htdocs/deskapp_codeigniter/system/Config/Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance()
+#7 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(995): CodeIgniter\Config\Services::session()
+#8 /opt/lampp/htdocs/deskapp_codeigniter/app/Views/deskapp/auth/login.php(49): session()
+#9 /opt/lampp/htdocs/deskapp_codeigniter/system/View/View.php(223): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(1213): CodeIgniter\View\View->render()
+#11 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Deskapp/Login.php(14): view()
+#12 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Login->index()
+#13 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController()
+#14 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#15 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#16 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#17 {main}
+CRITICAL - 2021-02-04 05:32:00 --> syntax error, unexpected ')', expecting variable (T_VARIABLE)
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-02-04 05:32:25 --> syntax error, unexpected 'return' (T_RETURN)
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-02-04 14:28:06 --> Class 'App\Filters\Auth' not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(402): CodeIgniter\Filters\Filters->run()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#4 {main}
+CRITICAL - 2021-02-04 14:28:33 --> Class 'App\Filters\Auth' not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(402): CodeIgniter\Filters\Filters->run()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#4 {main}
+CRITICAL - 2021-02-04 14:28:34 --> Class 'App\Filters\Auth' not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(402): CodeIgniter\Filters\Filters->run()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#4 {main}
+CRITICAL - 2021-02-04 14:28:34 --> Class 'App\Filters\Auth' not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(402): CodeIgniter\Filters\Filters->run()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#4 {main}
+CRITICAL - 2021-02-04 14:31:40 --> Class "App\Model" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(342): include_once()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Register.php(28): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Register->save()
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-04 14:46:25 --> fopen(NULL/ci_sessionqvub84r5fvjgkt5tdclcnj1jn1d9psl4): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Session/Handlers/FileHandler.php(153): fopen()
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/Session/Session.php(1027): session_start()
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/Session/Session.php(226): CodeIgniter\Session\Session->startSession()
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/Config/Services.php(714): CodeIgniter\Session\Session->start()
+#6 /opt/lampp/htdocs/deskapp_codeigniter/system/Config/BaseService.php(100): CodeIgniter\Config\Services::session()
+#7 /opt/lampp/htdocs/deskapp_codeigniter/system/Config/Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance()
+#8 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(995): CodeIgniter\Config\Services::session()
+#9 /opt/lampp/htdocs/deskapp_codeigniter/app/Views/deskapp/auth/login.php(49): session()
+#10 /opt/lampp/htdocs/deskapp_codeigniter/system/View/View.php(223): include('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(1213): CodeIgniter\View\View->render()
+#12 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Login.php(14): view()
+#13 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Login->index()
+#14 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController()
+#15 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest()
+#16 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#17 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#18 {main}
+CRITICAL - 2021-02-04 15:57:59 --> Class "Josantonius\Session\Session" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 15:59:17 --> Class "App\ThirdParty\Session" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 16:01:38 --> Class "App\ThirdParty\Session" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 16:02:40 --> Class "App\ThirdParty\Session" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 16:05:11 --> Class "App\ThirdParty\Session" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 16:07:14 --> Class "Josantonius\Session\BaseController" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(342): include_once()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-04 16:11:14 --> Class "App\Controllers\Session" not found
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 19:02:15 --> Invalid file: deskapp/includes/footer.php
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/View/View.php(207): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deskapp/include...')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(1213): CodeIgniter\View\View->render('deskapp/include...', Array, true)
+#2 /opt/lampp/htdocs/deskapp_codeigniter/app/Views/deskapp/ui/ui-range-slider.php(118): view('deskapp/include...')
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/View/View.php(223): include('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/Common.php(1213): CodeIgniter\View\View->render('deskapp/ui/ui-r...', Array, true)
+#5 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Ui.php(44): view('deskapp/ui/ui-r...')
+#6 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Ui->rangeSlider()
+#7 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ui))
+#8 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
