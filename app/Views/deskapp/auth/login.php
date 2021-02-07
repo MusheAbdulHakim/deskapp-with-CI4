@@ -59,7 +59,7 @@
 						<div class="login-title">
 							<h2 class="text-center text-primary">Login To DeskApp</h2>
 						</div>
-						<form method="post" action="<?php echo base_url('deskapp/login/auth') ?>">
+						<form method="post" action="<?php echo base_url() ?>/deskapp/login/auth">
 							<div class="select-role">
 								<div class="btn-group btn-group-toggle" data-toggle="buttons">
 									<label class="btn active">

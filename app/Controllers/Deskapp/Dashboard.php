@@ -17,9 +17,16 @@
  	{
  		$session = session();
  		$data['username'] = $session->get('user_name');
+ 		echo view('deskapp/dashboard/index',$data);
+ 	}
+
+ 	public function two()
+ 	{
+ 		$session = session();
+ 		$data['username'] = $session->get('user_name');
  		echo view('deskapp/dashboard/index2',$data);
  	}
- 	public function two()
+ 	public function three()
  	{
  		$session = session();
  		$data['username'] = $session->get('user_name');

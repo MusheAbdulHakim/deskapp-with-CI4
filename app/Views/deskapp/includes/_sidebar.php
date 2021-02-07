@@ -17,8 +17,8 @@
 						</a>
 						<ul class="submenu">
 							<li><a href="<?php echo base_url('deskapp/dashboard'); ?>">Dashboard style 1</a></li>
-							<li><a href="<?php echo base_url('deskapp/dashboard/one'); ?>">Dashboard style 2</a></li>
-							<li><a href="<?php echo base_url('deskapp/dashboard/two'); ?>">Dashboard style 3</a></li>
+							<li><a href="<?php echo base_url('deskapp/dashboard/two'); ?>">Dashboard style 2</a></li>
+							<li><a href="<?php echo base_url('deskapp/dashboard/three'); ?>">Dashboard style 3</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

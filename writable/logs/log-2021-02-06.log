@@ -70,3 +70,68 @@ CRITICAL - 2021-02-06 19:08:18 --> fopen(/opt/lampp/htdocs/deskapp_codeigniter/w
 #16 /opt/lampp/htdocs/deskapp_codeigniter/public/index.php(44): CodeIgniter\CodeIgniter->run()
 #17 /opt/lampp/htdocs/deskapp_codeigniter/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
 #18 {main}
+CRITICAL - 2021-02-06 21:42:26 --> syntax error, unexpected token ","
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('deskapp/registe...')
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('deskapp/registe...')
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-06 21:44:08 --> Call to a member function isValid() on null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-06 21:44:35 --> Call to a member function move() on null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-06 21:45:32 --> Call to a member function move() on null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-06 21:47:26 --> Call to a member function move() on null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-06 21:51:54 --> Call to a member function move() on null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-06 21:54:14 --> Call to a member function move() on null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-06 22:13:59 --> Too few arguments to function CodeIgniter\Files\File::__construct(), 0 passed in /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Deskapp/Register.php on line 20 and at least 1 expected
+#0 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Deskapp/Register.php(20): CodeIgniter\Files\File->__construct()
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-06 22:15:00 --> CodeIgniter\Files\File::__construct(): Argument #1 ($path) must be of type string, null given, called in /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Deskapp/Register.php on line 34
+#0 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Deskapp/Register.php(34): CodeIgniter\Files\File->__construct(NULL)
+#1 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-06 22:15:21 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/deskapp_codeigniter/system/Files/File.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/opt/lampp/htdo...', 167)
+#1 /opt/lampp/htdocs/deskapp_codeigniter/app/Controllers/Deskapp/Register.php(45): CodeIgniter\Files\File->move('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(935): App\Controllers\Deskapp\Register->save()
+#3 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deskapp\Register))
+#4 /opt/lampp/htdocs/deskapp_codeigniter/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/deskapp_codeigniter/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}

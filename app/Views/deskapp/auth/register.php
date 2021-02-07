@@ -54,101 +54,79 @@
 				<div class="col-md-6 col-lg-7">
 					<img src="<?php echo base_url(); ?>/assets/vendors/images/register-page-img.png" alt="">
 				</div>
+				<?php if(isset($validation)):?>
+                    <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+                <?php endif;?>
 				<div class="col-md-6 col-lg-5">
-					<div class="register-box bg-white box-shadow border-radius-10">
-						<div class="wizard-content">
-							<form method="post" action="/deskapp/register/save" class="tab-wizard2 wizard-circle wizard">
-								<h5>Basic Account Credentials</h5>
-								<section>
-									<div class="form-wrap max-width-600 mx-auto">
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Email Address*</label>
-											<div class="col-sm-8">
-												<input required name="email" type="email" class="form-control">
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Username*</label>
-											<div class="col-sm-8">
-												<input required name="username" type="text" class="form-control">
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Password*</label>
-											<div class="col-sm-8">
-												<input required name="password" type="password" class="form-control">
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Confirm Password*</label>
-											<div class="col-sm-8">
-												<input required name="confirm_password" type="password" class="form-control">
-											</div>
-										</div>
-									</div>
-								</section>
-								<!-- Step 2 -->
-								<h5>Personal Information</h5>
-								<section>
-									<div class="form-wrap max-width-600 mx-auto">
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Full Name*</label>
-											<div class="col-sm-8">
-												<input type="text" class="form-control">
-											</div>
-										</div>
-										<div class="form-group row align-items-center">
-											<label class="col-sm-4 col-form-label">Gender*</label>
-											<div class="col-sm-8">
-												<div class="custom-control custom-radio custom-control-inline pb-0">
-													<input type="radio" id="male" name="gender" class="custom-control-input">
-													<label class="custom-control-label" for="male">Male</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline pb-0">
-													<input type="radio" id="female" name="gender" class="custom-control-input">
-													<label class="custom-control-label" for="female">Female</label>
-												</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Profile Picture</label>
-											<div class="col-sm-8">
-												<input type="file" name="avatar" class="form-control">
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-sm-4 col-form-label">Telephone</label>
-											<div class="col-sm-8">
-												<input type="tel" name="phone" class="form-control">
-											</div>
-										</div>
-									</div>
-								</section>
-								
-							</form>
+					<div class="register-box container-fluid pt-4 pb-4 bg-white box-shadow border-radius-10">
+						<form method="post" enctype="multipart/form-data" action="<?php echo base_url() ?>/deskapp/register/save" >
+							<?= csrf_field() ?>
+						<div class="form-group row">
+							<label class="col-sm-4 col-form-label">Username*</label>
+							<div class="col-sm-8">
+								<input required name="username" type="text" class="form-control">
+							</div>
 						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 col-form-label">Email Address*</label>
+							<div class="col-sm-8">
+								<input required name="email" type="email" class="form-control">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 col-form-label">Password*</label>
+							<div class="col-sm-8">
+								<input required name="password" type="password" class="form-control">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 col-form-label">Confirm Password*</label>
+							<div class="col-sm-8">
+								<input required name="confirm_password" type="password" class="form-control">
+							</div>
+						</div>
+						<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Full Name*</label>
+								<div class="col-sm-8">
+									<input required name="fullname" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group row align-items-center">
+								<label class="col-sm-4 col-form-label">Gender*</label>
+								<div class="col-sm-8">
+									<div class="custom-control custom-radio custom-control-inline pb-0">
+										<input type="radio" id="male" value="male" name="gender" class="custom-control-input">
+										<label class="custom-control-label" for="male">Male</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline pb-0">
+										<input type="radio" id="female" value="female" name="gender" class="custom-control-input">
+										<label class="custom-control-label" for="female">Female</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Avatar</label>
+								<div class="col-sm-8">
+									<input type="file" name="avatar" class="form-control">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Telephone</label>
+								<div class="col-sm-8">
+									<input type="tel" name="phone" class="form-control">
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="input-group mb-0">
+									<input class="btn btn-primary btn-lg btn-block" type="submit" value="Register">
+								</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- success Popup html Start -->
-	<!-- <button type="button" id="success-modal-btn" hidden data-toggle="modal" data-target="#success-modal" data-backdrop="static">Launch modal</button>
-	<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered max-width-400" role="document">
-			<div class="modal-content">
-				<div class="modal-body text-center font-18">
-					<h3 class="mb-20">Form Submitted!</h3>
-					<div class="mb-30 text-center"><img src="<?php echo base_url(); ?>/assets/vendors/images/success.png"></div>
-					Your account has been registered successfully. Please go and login
-				</div>
-				<div class="modal-footer justify-content-center">
-					<a href="<?php echo base_url('deskapp/login'); ?>" class="btn btn-primary">Done</a>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- success Popup html End -->
+	
 	<!-- js -->
 	<script src="<?php echo base_url(); ?>/assets/vendors/scripts/core.js"></script>
 	<script src="<?php echo base_url(); ?>/assets/vendors/scripts/script.min.js"></script>
@@ -157,5 +135,22 @@
 	<script src="<?php echo base_url(); ?>/assets/src/plugins/jquery-steps/jquery.steps.js"></script>
 	<script src="<?php echo base_url(); ?>/assets/vendors/scripts/steps-setting.js"></script>
 </body>
-
+<!-- success Popup html Start -->
+<button type="button" id="success-modal-btn" hidden data-toggle="modal" data-target="#success-modal" data-backdrop="static">Launch modal</button>
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered max-width-400" role="document">
+		<div class="modal-content">
+			<div class="modal-body text-center font-18">
+				<h3 class="mb-20">Form Submitted!</h3>
+				<div class="mb-30 text-center"><img src="<?php echo base_url(); ?>/assets/vendors/images/success.png"></div>
+				Your account has been registered successfully. Please go and login
+			</div>
+			<div class="modal-footer justify-content-center">
+				<a href="<?php echo base_url('deskapp/login'); ?>" class="btn btn-primary">Done</a>
+				<input type="hidden" name="submit">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- success Popup html End -->
 </html>
