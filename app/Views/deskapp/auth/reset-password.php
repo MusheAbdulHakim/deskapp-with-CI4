@@ -40,7 +40,7 @@
 			</div>
 			<div class="login-menu">
 				<ul>
-					<li><a href="login.html">Login</a></li>
+					<li><a href="<?php echo base_url('deskapp/login'); ?>">Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 							<h2 class="text-center text-primary">Reset Password</h2>
 						</div>
 						<h6 class="mb-20">Enter your new password, confirm and submit</h6>
-						<form>
+						<form method="post">
 							<div class="input-group custom">
 								<input type="text" class="form-control form-control-lg" placeholder="New Password">
 								<div class="input-group-append custom">
@@ -73,11 +73,9 @@
 							<div class="row align-items-center">
 								<div class="col-5">
 									<div class="input-group mb-0">
-										<!--
-											use code for form submit
-											<input class="btn btn-primary btn-lg btn-block" type="submit" value="Submit">
-										-->
-										<a class="btn btn-primary btn-lg btn-block" href="index.html">Submit</a>
+											<input class="btn btn-primary btn-lg btn-block" name="submit" type="submit" value="Submit">
+										
+										<!-- <a class="btn btn-primary btn-lg btn-block" href="index.html">Submit</a> -->
 									</div>
 								</div>
 							</div>

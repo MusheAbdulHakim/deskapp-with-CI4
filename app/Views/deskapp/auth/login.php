@@ -40,7 +40,7 @@
 			</div>
 			<div class="login-menu">
 				<ul>
-					<li><a href="<?php echo base_url('register'); ?>">Register</a></li>
+					<li><a href="<?php echo base_url('deskapp/register'); ?>">Register</a></li>
 				</ul>
 			</div>
 		</div>
@@ -59,7 +59,7 @@
 						<div class="login-title">
 							<h2 class="text-center text-primary">Login To DeskApp</h2>
 						</div>
-						<form method="post" action="<?php echo base_url('public/login/auth') ?>">
+						<form method="post" action="<?php echo base_url('deskapp/login/auth') ?>">
 							<div class="select-role">
 								<div class="btn-group btn-group-toggle" data-toggle="buttons">
 									<label class="btn active">
@@ -96,7 +96,7 @@
 									</div>
 								</div>
 								<div class="col-6">
-									<div class="forgot-password"><a href="<?php echo base_url('forgot-password') ?>">Forgot Password</a></div>
+									<div class="forgot-password"><a href="<?php echo base_url('deskapp/Forgotpassword') ?>">Forgot Password</a></div>
 								</div>
 							</div>
 							<div class="row">
@@ -110,7 +110,7 @@
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
-										<a class="btn btn-outline-primary btn-lg btn-block" href="<?php echo base_url('register'); ?>">Register To Create Account</a>
+										<a class="btn btn-outline-primary btn-lg btn-block" href="<?php echo base_url('deskapp/register'); ?>">Register To Create Account</a>
 									</div>
 								</div>
 							</div>

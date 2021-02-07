@@ -102,5 +102,5 @@ Information on running the CodeIgniter test suite can be found in the [README.md
 ## Sample Screens
 <img src="https://user-images.githubusercontent.com/38377336/86491687-03ca9a00-bd89-11ea-8a3a-11dcfcddd254.png" alt="Template 1">
 
-##theme DeskApp Admin
+## theme DeskApp Admin
 get the admin theme from: https://github.com/dropways/deskapp
