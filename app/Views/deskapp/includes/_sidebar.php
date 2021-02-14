@@ -175,6 +175,10 @@
 					<li>
 						<div class="dropdown-divider"></div>
 					</li>
+					
+					<li>
+						<div class="dropdown-divider"></div>
+					</li>
 					<li>
 						<div class="sidebar-small-cap">Extra</div>
 					</li>

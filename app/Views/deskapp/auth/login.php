@@ -60,7 +60,7 @@
 							<h2 class="text-center text-primary">Login To DeskApp</h2>
 						</div>
 						<form method="post" action="<?php echo base_url() ?>/deskapp/login/auth">
-							<div class="select-role">
+							<!-- <div class="select-role">
 								<div class="btn-group btn-group-toggle" data-toggle="buttons">
 									<label class="btn active">
 										<input type="radio" name="options" id="admin">
@@ -75,7 +75,7 @@
 										Employee
 									</label>
 								</div>
-							</div>
+							</div> -->
 							<div class="input-group custom">
 								<input name="username" type="text" class="form-control form-control-lg" placeholder="Username">
 								<div class="input-group-append custom">

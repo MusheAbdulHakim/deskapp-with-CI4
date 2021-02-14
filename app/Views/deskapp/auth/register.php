@@ -55,71 +55,66 @@
 					<img src="<?php echo base_url(); ?>/assets/vendors/images/register-page-img.png" alt="">
 				</div>
 				<?php if(isset($validation)):?>
-                    <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+                    <div class="alert alert-danger">
+                    	<?= $validation->listErrors() ?></div>
                 <?php endif;?>
 				<div class="col-md-6 col-lg-5">
 					<div class="register-box container-fluid pt-4 pb-4 bg-white box-shadow border-radius-10">
 						<form method="post" enctype="multipart/form-data" action="<?php echo base_url() ?>/deskapp/register/save" >
 							<?= csrf_field() ?>
-						<div class="form-group row">
-							<label class="col-sm-4 col-form-label">Username*</label>
-							<div class="col-sm-8">
-								<input required name="username" type="text" class="form-control">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-4 col-form-label">Email Address*</label>
-							<div class="col-sm-8">
-								<input required name="email" type="email" class="form-control">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-4 col-form-label">Password*</label>
-							<div class="col-sm-8">
-								<input required name="password" type="password" class="form-control">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-4 col-form-label">Confirm Password*</label>
-							<div class="col-sm-8">
-								<input required name="confirm_password" type="password" class="form-control">
-							</div>
-						</div>
-						<div class="form-group row">
-								<label class="col-sm-4 col-form-label">Full Name*</label>
-								<div class="col-sm-8">
-									<input required name="fullname" type="text" class="form-control">
-								</div>
-							</div>
-							<div class="form-group row align-items-center">
-								<label class="col-sm-4 col-form-label">Gender*</label>
-								<div class="col-sm-8">
-									<div class="custom-control custom-radio custom-control-inline pb-0">
-										<input type="radio" id="male" value="male" name="gender" class="custom-control-input">
-										<label class="custom-control-label" for="male">Male</label>
-									</div>
-									<div class="custom-control custom-radio custom-control-inline pb-0">
-										<input type="radio" id="female" value="female" name="gender" class="custom-control-input">
-										<label class="custom-control-label" for="female">Female</label>
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label">Avatar</label>
-								<div class="col-sm-8">
-									<input type="file" name="avatar" class="form-control">
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label">Telephone</label>
-								<div class="col-sm-8">
-									<input type="tel" name="phone" class="form-control">
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="input-group mb-0">
-									<input class="btn btn-primary btn-lg btn-block" type="submit" value="Register">
-								</div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">First Name*</label>
+                                <div class="col-sm-8">
+                                    <input required name="firstname" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Last Name*</label>
+                                <div class="col-sm-8">
+                                    <input required name="lastname" type="text" class="form-control">
+                                </div>
+                            </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Username*</label>
+                            <div class="col-sm-8">
+                                <input required name="username" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Email Address*</label>
+                            <div class="col-sm-8">
+                                <input required name="email" type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Avatar</label>
+                                <div class="col-sm-8">
+                                    <input type="file" name="avatar" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Telephone</label>
+                                <div class="col-sm-8">
+                                    <input type="tel" name="phone" class="form-control">
+                                </div>
+                            </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Password*</label>
+                            <div class="col-sm-8">
+                                <input required name="password" type="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Confirm Password*</label>
+                            <div class="col-sm-8">
+                                <input required name="confirm_password" type="password" class="form-control">
+                            </div>
+                        </div>
+                          
+                        <div class="col-sm-12">
+                        <div class="input-group mb-0">
+                            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Register">
+                        </div>
 						</form>
 					</div>
 				</div>

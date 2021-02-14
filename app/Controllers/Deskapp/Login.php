@@ -21,15 +21,17 @@
 	        $model = new UserModel();
 	        $username = $this->request->getPost('username');
 	        $password = $this->request->getPost('password');
-	        $data = $model->where('user_name', $username)->first();
+	        $data = $model->where('username', $username)->first();
 	        if($data){
-	            $pass = $data['user_password'];
+	            $pass = $data['password'];
 	            $verify_pass = password_verify($password, $pass);
 	            if($verify_pass){
 	                $ses_data = [
-	                    'user_id'       => $data['user_id'],
-	                    'user_name'     => $data['user_name'],
-	                    'user_email'    => $data['user_email'],
+	                    'id'       => $data['id'],
+	                    'username'     => $data['username'],
+	                    'email'    => $data['email'],
+	                    'firstname' => $data['firstname'],
+	                    'lastname' => $data['lastname'],
 	                    'logged_in'     => TRUE
 	                ];
 	                $session->set($ses_data);

@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Deskapp/Login::index');
-// $routes->get('/deskapp/(:any)', 'deskapp/(:any)::$1',['filter' => 'auth']);
+$routes->get('/deskapp/dashboard','Deskapp/Dashboard::index',['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

@@ -10,6 +10,7 @@
 		public function index($value='')
 		{
 			$session = session();
+			$data['session'] = \Config\Services::session();
  			$data['username'] = $session->get('user_name');
 			return view('deskapp/chat/chat',$data);
 		}
